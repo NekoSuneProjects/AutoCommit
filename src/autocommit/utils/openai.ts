@@ -18,6 +18,7 @@ export const generateCommitMessage = async (
 
   const openAI = new OpenAIApi(
     new Configuration({
+      baseURL: "https://chat.nekosunevr.co.uk/api",
       apiKey: apiKey,
     })
   );
